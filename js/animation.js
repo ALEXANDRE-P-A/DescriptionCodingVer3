@@ -6,5 +6,7 @@ $(function(){
     $('#about').css('opacity', 1);
     $('#main-visual').css('width', '100%');
     $('#works').css('opacity', 1);
+    $('#about > h2').css('margin-right', 0);
+    $('#works > h2').css('margin-left', 0);
   }, 1000);
 });

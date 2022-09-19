@@ -14,15 +14,7 @@ body {
 header {
   width: 100%;
   height: 109px;
-  position: relative;
-}
-nav {
-  width: 50%;
-  height: 78px;
-  padding-top: 31px;
-  position: absolute;
-  top: 0;
-  right: 0;
+  margin: 0;
 }
 #main-visual {
   width: 0%;
@@ -35,12 +27,15 @@ nav {
 /* --------------- PCスタイル --------------- */
 @media screen and (min-width: 768px){
   /* --------------- ヘッダー --------------- */
-  #logo {
+nav {
+  width: 100%;
+  height: 78px;
+  display: flex;
+}
+ #logo {
     width: 220px;
     height: 58px;
-    position: absolute;
-    top: 20px;
-    left: 179px;
+    margin: 20px 132px 0 170px;
     font-size: 34px;
     font-weight: 700;
     text-align: center;
@@ -51,6 +46,7 @@ nav {
     transition: all 1s linear;
   }
   nav > a {
+    margin-top: 31px;
     margin-right: 35px;
     font-size: 34px;
     font-weight: 700;
@@ -59,9 +55,6 @@ nav {
     line-height: 46px;
     opacity: 0;
     transition: all 1s linear;
-  }
-  nav > *:first-child {
-    margin-left: 55px;
   }
   /* --------------- メインビジュアル --------------- */
   #main-visual {
@@ -81,8 +74,12 @@ nav {
     text-align: center;
     font-size:  34px;
     font-weight: 700;
-    margin: 0 0 22px 0;
     line-height: 46px;
+    margin-top: 0;
+    margin-right: -880px;
+    margin-bottom: 22px;
+    margin-left: 0;
+    transition: all 1s ease;
   }
   #about > div {
     display: flex;
@@ -117,6 +114,11 @@ nav {
     font-weight: 700;
     margin: 0 0 30px 0;
     line-height: 46px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+    margin-left: -880px;
+    transition: all 1s ease;
   }
   #works > div {
     display: flex;
@@ -154,31 +156,33 @@ nav {
 /* --------------- スマートフォンスタイル --------------- */
 @media screen and (max-width: 767px){
   /* --------------- ヘッダー --------------- */
+  nav {
+    width: 100%;
+    height: 109px;
+    display: flex;
+  }
   #logo {
-    width: 220px;
-    height: 58px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    margin: 20px 250px 20px 20px;
+    width: 163px;
+    height: 46px;
     font-size: 34px;
     font-weight: 700;
     text-align: center;
-    padding-top: 11px;
+    padding: 11px 29px 12px 28px;
     border: 1px solid #000000;
     opacity: 0;
     transition: all 1s linear;
   }
   nav > a {
+    margin-top: 31px;
+    margin-left: 20px;
+    margin-right: 0;
     font-size: 34px;
     color: #000000;
     text-decoration: none;
     font-weight: 700;
     opacity: 0;
     transition: all 1s linear;
-  }
-  nav > *:first-child {
-    margin-left: 132.5px;
-    margin-right: 10px;
   }
   /* --------------- メインビジュアル --------------- */
   #main-visual {
@@ -197,8 +201,12 @@ nav {
     text-align: center;
     font-size:  34px;
     font-weight: 700;
-    margin: 0 0 22px 0;
     line-height: 46.31px;
+    margin-top: 0;
+    margin-right: -880px;
+    margin-bottom: 22px;
+    margin-left: 0;
+    transition: all 1s ease;
   }
   #about > div {
     display: flex;
@@ -231,8 +239,12 @@ nav {
     text-align: center;
     font-size:  34px;
     font-weight: 700;
-    margin: 0 0 29.51px 0;
     line-height: 46.31px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 29.51px;
+    margin-left: -880px;
+    transition: all 1s ease;
   }
   #works > div {
     display: flex;
