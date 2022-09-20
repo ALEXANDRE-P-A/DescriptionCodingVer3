@@ -314,7 +314,7 @@ nav {
     /* display: flex; */
     flex-direction: column;
     justify-content: center;
-    top: 200px;
+    top: 20px;
     left: 0;
     background-color: rgba(0,0,0,0.8);
     padding-top: 20px;
