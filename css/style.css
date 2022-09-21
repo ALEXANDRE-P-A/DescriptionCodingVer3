@@ -204,8 +204,8 @@ nav {
   }
   nav > a {
     margin-top: 31px;
-    margin-left: 20px;
-    margin-right: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 34px;
     color: #000000;
     text-decoration: none;
@@ -222,9 +222,9 @@ nav {
   #about {
     margin: 50px auto 0;
     width: 624px;
-    height: 230px;
     opacity: 0;
     transition: all 1s linear;
+    display: block;
   }
   #about > h2 {
     text-align: center;
@@ -239,23 +239,32 @@ nav {
   }
   #about > div {
     display: flex;
+    flex-direction: column;
   }
   #my-photo {
-    width: 141px;
-    height: 142px;
+    width: 340px;
+    height: 340px;
     border-radius: 50%;
+    align-self: center;
+    margin-bottom: 22px;
+  }
+  #about > div > div {
+    align-self: center; 
+    display: flex;
+    flex-direction: column;   
   }
   #about > div > div > span {
     height: 33px;
-    margin-left: 39px;
-    font-size: 24px;
+    font-size: 34px;
     font-weight: 700;
     line-height: 32.69px;
+    align-self: center;
+    margin-bottom: 22px;
   }
   #about > div > div > ul {
-    margin: 7px 0 0 28px;
-    font-size: 18px;
-    line-height: 24.52px;
+    margin: 0 0 0 0;
+    font-size: 24px;
+    /* line-height: 24.52px; */
   }
   /* --------------- worksセクション --------------- */
   #works {
