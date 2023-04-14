@@ -1,15 +1,3 @@
-/* ------------------- フッターのコピーライトの文を点滅させる ------------------- */
-let flag = 0;
-const footerScript = document.getElementById('footer-script');
-
-setInterval(() => {
-  flag += 1;
-  if(flag % 2 == 0)
-    footerScript.style.display = 'block';
-  else
-    footerScript.style.display = 'none';
-}, 500);
-
 /* ------------------- Worksセクションの画像を読み込むための情報の配列(1) ------------------- */
 const imgInfo = [
   /* ファイル名、表示するテキスト、alt属性の値 */
