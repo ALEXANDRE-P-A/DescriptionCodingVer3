@@ -1,0 +1,9 @@
+body, header, nav, div, img, main, section, h1, p, h2, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
